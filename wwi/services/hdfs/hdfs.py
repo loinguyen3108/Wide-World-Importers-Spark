@@ -1,9 +1,11 @@
-from wwi.services.hdfs import BaseHDFS
+from hdfs import InsecureClient
+
+from wwi.dependencies.settings import HDFS_URL
 
 
-class HDFSSerivce(BaseHDFS):
+class HDFSService:
     def __init__(self) -> None:
-        super().__init__()
+        self.client = InsecureClient(url=HDFS_URL)
 
-    def is_exists(self, path: str):
-        return True if self.client.status(path, strict=False) else False
+    def is_exists(self, prefix: str):
+        return True if self.client.status(prefix, strict=False) else False
