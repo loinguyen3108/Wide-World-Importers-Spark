@@ -1,11 +1,9 @@
-# World-Wide-Importers-Spark
+# Welcome to my World-Wide-Importers-Spark project
 The project use WWI data use PySpark to ETL from source system to Hive. Then, we will analyze with Superset
-
-# ![Fifa Player](https://github.com/loinguyen3108/dvdrental-etl/blob/main/images/fifa_logo.gif?raw=true)
 
 > This is project ETL data from csv files to hive. Then, this data will be analyze with superset
 
-[![github release date](https://img.shields.io/github/release-date/loinguyen3108/fifa-etl-analyze)](https://github.com/loinguyen3108/fifa-etl-analyze/releases/tag/latest) [![commit active](https://img.shields.io/github/commit-activity/w/loinguyen3108/fifa-etl-analyze)](https://github.com/loinguyen3108/fifa-etl-analyze/commit/main) [![license](https://img.shields.io/badge/license-Apache-blue)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/loinguyen3108/fifa-etl-analyze/issues) [![code with hearth by Loi Nguyen](https://img.shields.io/badge/DE-Loi%20Nguyen-orange)](https://github.com/loinguyen3108)
+[![github release date](https://img.shields.io/github/release-date/loinguyen3108/Wide-World-Importers-Spark)](https://github.com/loinguyen3108/Wide-World-Importers-Spark/releases/tag/Latest) [![commit active](https://img.shields.io/github/commit-activity/w/loinguyen3108/Wide-World-Importers-Spark)](https://github.com/loinguyen3108/Wide-World-Importers-Spark/commit/main) [![license](https://img.shields.io/badge/license-Apache-blue)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/loinguyen3108/Wide-World-Importers-Spark/issues) [![code with hearth by Loi Nguyen](https://img.shields.io/badge/DE-Loi%20Nguyen-orange)](https://github.com/loinguyen3108)
 
 ## 🚩 Table of Contents
 - [🚩 Table of Contents](#-table-of-contents)
@@ -53,7 +51,7 @@ Login and take a look -- navigate to http://localhost:8080/login/ -- u/p: [admin
 Setup at [spark document](https://spark.apache.org/docs/latest/spark-standalone.html)
 
 **3. Dataset**  
-Data is downloaded at [Fifa Dataset](https://drive.google.com/file/d/1BKEHD8FaTD3uLKU0dU9w-4SVs_4z1RmA/view?usp=sharing)
+Data setup at [Fifa Dataset](https://learn.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container?view=sql-server-ver16))
 
 **4. Environment**
 ```
@@ -93,19 +91,9 @@ spark-submit --py-files packages.zip manager/transform .py--init --exec-date YYY
 spark-submit --py-files packages.zip manager/transform.py --fifa-version <version>
 ```
 
-## Fifa Star Schema
-[Fifa schema](https://drive.google.com/file/d/1WN8exuq16WHIwoXQAJkXhd-xI7NxO1Go/view?usp=sharing)
+## WWI Star Schema
+[Fifa schema](https://drive.google.com/file/d/14JUyZdbpfdqgfxSIj0fBvxGwYPuAEpEc/view?usp=sharing)
 
-## ✍️ Example
-
-- Data Lake
-# ![Data Lake](https://github.com/loinguyen3108/fifa-etl-analyze/blob/main/images/datalake.png?raw=true)
-
-- Hive
-# ![Hive](https://github.com/loinguyen3108/fifa-etl-analyze/blob/main/images/hvie.png?raw=true)
-
-- Superset
-# ![Superset](https://github.com/loinguyen3108/fifa-etl-analyze/blob/main/images/superset.jpg?raw=true)
 ## 📜 License
 
 This software is licensed under the [Apache](https://github.com/loinguyen3108/dvdrental-etl/blob/master/LICENSE) © [Loi Nguyen](https://github.com/loinguyen3108).
