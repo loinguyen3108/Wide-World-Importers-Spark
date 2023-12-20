@@ -1,7 +1,7 @@
 # Welcome to my World-Wide-Importers-Spark project
-The project use WWI data use PySpark to ETL from source system to Hive. Then, we will analyze with Superset
+The project uses WWI data using PySpark to ETL from the source system to Hive. Then, we will analyze the Superset
 
-> This is project ETL data from csv files to hive. Then, this data will be analyze with superset
+> This is project ETL data from csv files to hive. Then, this data will be analyzed with the superset
 
 [![github release date](https://img.shields.io/github/release-date/loinguyen3108/Wide-World-Importers-Spark)](https://github.com/loinguyen3108/Wide-World-Importers-Spark/releases/tag/Latest) [![commit active](https://img.shields.io/github/commit-activity/w/loinguyen3108/Wide-World-Importers-Spark)](https://github.com/loinguyen3108/Wide-World-Importers-Spark/commit/main) [![license](https://img.shields.io/badge/license-Apache-blue)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/loinguyen3108/Wide-World-Importers-Spark/issues) [![code with hearth by Loi Nguyen](https://img.shields.io/badge/DE-Loi%20Nguyen-orange)](https://github.com/loinguyen3108)
 
@@ -9,7 +9,7 @@ The project use WWI data use PySpark to ETL from source system to Hive. Then, we
 - [🚩 Table of Contents](#-table-of-contents)
 - [🎨 Stack](#-stack)
   - [⚙️ Setup](#️-setup)
-- [Fifa Star Schema](#fifa-star-schema)
+- [WWI Star Schema](#wwi-star-schema)
 - [✍️ Example](#️-example)
 - [📜 License](#-license)
 
@@ -81,18 +81,18 @@ cd ..
 **8. Run**
 ```
 # ingest data from postgres to datalake
-spark-submit --py-files packages.zip manager/ingestion.py --file file:/home/... --fifa-version <version> --gender <0 or 1> --table_name <table_name>
+spark-submit --py-files packages.zip manager/ingestion.py --table_name <table_name>
 
 # transform data from datalake to hive
 # Init dim_date
 spark-submit --py-files packages.zip manager/transform .py--init --exec-date YYYY:MM:DD
 
 #Transform
-spark-submit --py-files packages.zip manager/transform.py --fifa-version <version>
+spark-submit --py-files packages.zip manager/transform.py
 ```
 
 ## WWI Star Schema
-[Fifa schema](https://drive.google.com/file/d/14JUyZdbpfdqgfxSIj0fBvxGwYPuAEpEc/view?usp=sharing)
+[WWI schema](https://drive.google.com/file/d/14JUyZdbpfdqgfxSIj0fBvxGwYPuAEpEc/view?usp=sharing)
 
 ## 📜 License
 
