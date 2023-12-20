@@ -51,7 +51,7 @@ Login and take a look -- navigate to http://localhost:8080/login/ -- u/p: [admin
 Setup at [spark document](https://spark.apache.org/docs/latest/spark-standalone.html)
 
 **3. Dataset**  
-Data setup at [Fifa Dataset](https://learn.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container?view=sql-server-ver16))
+Data setup at [WWI Dataset](https://learn.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container?view=sql-server-ver16)
 
 **4. Environment**
 ```
